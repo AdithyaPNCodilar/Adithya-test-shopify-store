@@ -1417,6 +1417,12 @@
         "id": "social_vimeo_link",
         "label": "t:settings_schema.social-media.settings.social_vimeo_link.label",
         "placeholder": "t:settings_schema.social-media.settings.social_vimeo_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_strava_link",
+        "label": "t:settings_schema.social-media.settings.social_strava_link",
+        "placeholder": "t:settings_schema.social-media.settings.social_strava_link.info"
       }
     ]
   },
