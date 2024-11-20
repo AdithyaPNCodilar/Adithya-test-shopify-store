@@ -1,0 +1,56 @@
+{% if template == 'page' and page.handle == 'faq' %}
+{{ 'section-faq.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width faq">
+  <h2 class="h1">{{ section.settings.headline }}</h2>
+
+  {% for block in section.blocks %}
+  <div class="faq__row">
+    {% if forloop.first %}
+    <hr class="faq__divider">
+    {% endif %}
+    <input type="checkbox" id="question-{{ forloop.index }}" class="faq__toggle">
+    <label for="question-{{ forloop.index }}" class="faq__question">{{ block.settings.question }}</label>
+    <div class="faq__answer">{{ block.settings.answer }}</div>
+    <hr class="faq__divider">
+  </div>
+  {% endfor %}
+
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Headline",
+      "id": "headline"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "question",
+      "type": "question",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Question",
+          "id": "question"
+        },
+        {
+          "type": "text",
+          "label": "Answer",
+          "id": "answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ"
+    }
+  ]
+}
+{% endschema %}

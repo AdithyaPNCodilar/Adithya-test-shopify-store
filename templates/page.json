@@ -1,0 +1,151 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "testimonials_ALPgTq": {
+      "type": "testimonials",
+      "blocks": {
+        "column_BL9YYw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/woman-wearing-aviator-glasses.jpg",
+            "toggle_image": true,
+            "title": "Adhiti Sharma",
+            "text": "<p>I was searching for a compact bag to hold my everyday essentials to office and I am fortunate to come across this awesome bag. I love the little compartments inside to hold tiny things. I would recommend this bag to women who wants to carry just the essentials in an organized - hassle free bag. Go for it girls.</p>",
+            "stars_count": "5",
+            "toggle_review_stars": true
+          }
+        },
+        "column_6QWe6n": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/grey-woman-on-steps.jpg",
+            "toggle_image": true,
+            "title": "Shreya Lakshmi",
+            "text": "<p>The look of the bag is super cool n class. The print n colours r too good. The only concern is the inner material quality could have been even better.</p>",
+            "stars_count": "5",
+            "toggle_review_stars": true
+          }
+        },
+        "column_hpbMNN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/woman-in-glasses-at-meeting.jpg",
+            "toggle_image": true,
+            "title": "Swathi Malhothra",
+            "text": "<p>Very nice and material quality is so good...</p>",
+            "stars_count": "5",
+            "toggle_review_stars": true
+          }
+        },
+        "column_pmaWhA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/woman-in-white-sleeveless-shirt.jpg",
+            "toggle_image": true,
+            "title": "Soha Shetty",
+            "text": "<p>Hey !! its very nice product i loved it .. material is very nice.. value for money</p>",
+            "stars_count": "5",
+            "toggle_review_stars": true
+          }
+        },
+        "column_j6UxtK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/woman-sits-on-a-grey-couch-smiling-with-eyes-closed.jpg",
+            "toggle_image": true,
+            "title": "Maya Agarwal",
+            "text": "<p>Very nice compact design. Trendy and cool for daily essentials.</p>",
+            "stars_count": "5",
+            "toggle_review_stars": true
+          }
+        },
+        "column_Lm68Ry": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/stylish-woman-against-blue.jpg",
+            "toggle_image": true,
+            "title": "Shohini Mehtha",
+            "text": "<p>New customer here. I have grabbed B1G1 on wallets offer. I have never seen such hardy, spacious and excellent quality fabric wallets. Eyeing on handbags now ❤️</p>",
+            "stars_count": "5",
+            "toggle_review_stars": true
+          }
+        }
+      },
+      "block_order": [
+        "column_BL9YYw",
+        "column_6QWe6n",
+        "column_hpbMNN",
+        "column_pmaWhA",
+        "column_j6UxtK",
+        "column_Lm68Ry"
+      ],
+      "settings": {
+        "title": "",
+        "subtitle": "Get inspired by other customers",
+        "heading_alignment": "center",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "swipe_on_mobile": true,
+        "star_color": "#369c40",
+        "testimonial_background": "#ffffff",
+        "testimonial_section_background": "#eaeaea"
+      }
+    },
+    "faq_xtnDYV": {
+      "type": "faq",
+      "blocks": {
+        "question_GnfAtF": {
+          "type": "question",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "Items can be returned within 14 days."
+          }
+        },
+        "question_Mn3LHH": {
+          "type": "question",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "Yes! International orders ship via the postal service. You may incur import duties or other customs fees depending on your country of residence. We can't keep track of these, and are not responsible if your order gets held up in customs. If you do not see your country available in the shipping options, please send us an email and we can most likely add it."
+          }
+        },
+        "question_VqVB3f": {
+          "type": "question",
+          "settings": {
+            "question": "Do you wholesale?",
+            "answer": "Yes! Please contact us at info@AdithyaTestStore.com and we'll send you a copy of our latest line sheet"
+          }
+        }
+      },
+      "block_order": [
+        "question_GnfAtF",
+        "question_Mn3LHH",
+        "question_VqVB3f"
+      ],
+      "settings": {
+        "headline": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "testimonials_ALPgTq",
+    "faq_xtnDYV"
+  ]
+}

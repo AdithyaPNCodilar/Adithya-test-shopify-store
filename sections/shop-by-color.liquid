@@ -1,0 +1,182 @@
+{% schema %}
+{
+  "name": "shop by color",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Shop by color"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Custom Image"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop by Color",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="category-listing">
+  <h2 class="section-title">{{ section.settings.section_title }}</h2>
+  <div class="category-listing__items-wrapper">
+    <div class="category-listing__items">
+      {% for block in section.blocks %}
+        {% assign collection = block.settings.collection %}
+        <div class="category-listing__item">
+          <a href="{{ block.settings.link_url }}">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | img_url: '300x300' }}" alt="{{ block.settings.label }}">
+            {% else %}
+              <img src="{{ collection.image | img_url: '300x300' }}" alt="{{ collection.title }}">
+            {% endif %}
+            <div class="category-listing__label">
+              {% if block.settings.label %}
+                {{ block.settings.label }}
+              {% else %}
+                {{ collection.title }}
+              {% endif %}
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <button class="scroll-button left" onclick="scrollLeft()">&#10094;</button>
+  <button class="scroll-button right" onclick="scrollRight()">&#10095;</button>
+</div>
+
+<style>
+  .category-listing {
+    text-align: center;
+    margin: 40px 0 30px;
+    position: relative;
+  }
+  .section-title {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: grey;
+    margin: 5px auto 0;
+  }
+  .category-listing__items-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 0 10px;
+    scroll-behavior: smooth;
+  }
+  .category-listing__items {
+    display: inline-flex;
+    gap: 15px;
+  }
+  .category-listing__item {
+    display: inline-block;
+    margin: 10px;
+  }
+  .category-listing__item img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  .category-listing__item a {
+    text-decoration: none;
+  }
+  .category-listing__label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+  }
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    z-index: 1;
+  }
+  .scroll-button.left {
+    left: 0;
+    display: none; /* Hidden initially */
+  }
+  .scroll-button.right {
+    right: 0;
+  }
+</style>
+
+<script>
+  function scrollLeft() {
+    const itemsWrapper = document.querySelector('.category-listing__items-wrapper');
+    itemsWrapper.scrollBy({ left: -150, behavior: 'smooth' });
+  }
+
+  function scrollRight() {
+    const itemsWrapper = document.querySelector('.category-listing__items-wrapper');
+    itemsWrapper.scrollBy({ left: 150, behavior: 'smooth' });
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const itemsWrapper = document.querySelector('.category-listing__items-wrapper');
+    const scrollButtonLeft = document.querySelector('.scroll-button.left');
+    const scrollButtonRight = document.querySelector('.scroll-button.right');
+
+    itemsWrapper.addEventListener('scroll', () => {
+      const maxScrollLeft = itemsWrapper.scrollWidth - itemsWrapper.clientWidth;
+      
+      if (itemsWrapper.scrollLeft > 0) {
+        scrollButtonLeft.style.display = 'block';
+      } else {
+        scrollButtonLeft.style.display = 'none';
+      }
+      
+      if (itemsWrapper.scrollLeft >= maxScrollLeft) {
+        scrollButtonRight.style.display = 'none';
+      } else {
+        scrollButtonRight.style.display = 'block';
+      }
+    });
+
+    // Initial check to set button visibility
+    itemsWrapper.dispatchEvent(new Event('scroll'));
+  });
+</script>

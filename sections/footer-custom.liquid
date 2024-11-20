@@ -1,0 +1,134 @@
+{% schema %}
+{
+  "name": "S/PLUS Membership",
+  "settings": [
+    {
+      "type": "text",
+      "id": "main_title",
+      "label": "Main Title",
+      "default": "S/PLUS"
+    },
+    {
+      "type": "text",
+      "id": "sub_title_line1",
+      "label": "Sub Title Line 1",
+      "default": "BECOME"
+    },
+    {
+      "type": "text",
+      "id": "sub_title_line2",
+      "label": "Sub Title Line 2",
+      "default": "A MEMBER"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Create your account for free or log in to get S/PLUS members benefits like free delivery, faster checkout, special rewards, access to events, and more."
+    },
+    {
+      "type": "url",
+      "id": "learn_more_link",
+      "label": "Learn More Link"
+    },
+    {
+      "type": "url",
+      "id": "sign_in_link",
+      "label": "Sign In Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Footer",
+      "category": "Custom Footer"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .membership-section {
+    background-color: #121212;
+    color: white;
+    padding: 5rem 3rem 0 3rem; /* Increase left and right padding */
+  }
+  .membership-content {
+    padding: 0 3rem; /* Apply increased left and right padding */
+  }
+  .membership-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  .membership-section h2 {
+    font-size: 4.5rem;
+    line-height: 4.8rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-family: 'salomon-sans', 'salomon-fallback', sans-serif;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  .membership-section .subtitle-line {
+    display: block;
+  }
+  .membership-section p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1.25rem;
+  }
+  .membership-section .buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .membership-section .button {
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 0.8rem;
+    text-decoration: none;
+  }
+  .membership-section .button:hover {
+    background-color: #e0e0e0;
+    color: #000;
+  }
+  .membership-section .underline-wrapper {
+    padding: 0 3rem;
+    margin-top: 1.5rem;
+  }
+  .membership-section hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: white;
+    margin-top: 5rem;
+    margin-bottom: 0;
+  }
+</style>
+
+<div class="membership-section">
+  <div class="membership-content">
+    <h1>{{ section.settings.main_title }}</h1>
+    <h2>
+      <span class="subtitle-line">{{ section.settings.sub_title_line1 }}</span>
+      <span class="subtitle-line">{{ section.settings.sub_title_line2 }}</span>
+    </h2>
+    <p>{{ section.settings.description }}</p>
+    <div class="buttons">
+      <a href="{{ section.settings.learn_more_link }}" class="button">Learn more</a>
+      <a href="{{ section.settings.sign_in_link }}" class="button">Sign in</a>
+    </div>
+  </div>
+  <div class="underline-wrapper">
+    <hr>
+  </div>
+</div>

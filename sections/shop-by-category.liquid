@@ -1,0 +1,195 @@
+{% schema %}
+{
+  "name": "Shop By Category",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "luggage_sets_image",
+      "label": "Luggage Sets Image"
+    },
+    {
+      "type": "url",
+      "id": "luggage_sets_link",
+      "label": "Luggage Sets Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "hardside_image",
+      "label": "Hardside Image"
+    },
+    {
+      "type": "url",
+      "id": "hardside_link",
+      "label": "Hardside Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "softside_image",
+      "label": "Softside Image"
+    },
+    {
+      "type": "url",
+      "id": "softside_link",
+      "label": "Softside Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "backpacks_image",
+      "label": "Backpacks Image"
+    },
+    {
+      "type": "url",
+      "id": "backpacks_link",
+      "label": "Backpacks Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "business_image",
+      "label": "Business Image"
+    },
+    {
+      "type": "url",
+      "id": "business_link",
+      "label": "Business Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "kids_image",
+      "label": "Kids Image"
+    },
+    {
+      "type": "url",
+      "id": "kids_link",
+      "label": "Kids Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default",
+      "category": "Shop By Category",
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+.shop-by-category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* justify-content: center; */
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.shop-by-category-heading {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+  width: 100%;
+}
+
+.shop-by-category-description {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666;
+  width: 100%;
+}
+
+.category {
+  flex: 1 1 calc(33.333% - 40px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s;
+}
+
+.category:hover {
+  transform: scale(1.05);
+}
+
+.category img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.category h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.category p {
+  color: #666;
+  font-weight: bold;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .shop-by-category {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .category {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+    margin-right: 20px;
+  }
+
+  .category:last-child {
+    margin-right: 0;
+  }
+}
+</style>
+
+<div class="shop-by-category">
+  <h2 class="shop-by-category-heading">{{ section.settings.heading }}</h2>
+  <p class="shop-by-category-description">{{ section.settings.description }}</p>
+  <div class="category" onclick="redirectToCategory('{{ section.settings.luggage_sets_link }}')">
+    <img src="{{ section.settings.luggage_sets_image | img_url: 'master' }}" alt="Luggage Sets">
+    <h3>Luggage Sets</h3>
+    <p>Explore ></p>
+  </div>
+  <div class="category" onclick="redirectToCategory('{{ section.settings.hardside_link }}')">
+    <img src="{{ section.settings.hardside_image | img_url: 'master' }}" alt="Hardside">
+    <h3>Hardside</h3>
+    <p>Explore ></p>
+  </div>
+  <div class="category" onclick="redirectToCategory('{{ section.settings.softside_link }}')">
+    <img src="{{ section.settings.softside_image | img_url: 'master' }}" alt="Softside">
+    <h3>Softside</h3>
+    <p>Explore ></p>
+  </div>
+  <div class="category" onclick="redirectToCategory('{{ section.settings.backpacks_link }}')">
+    <img src="{{ section.settings.backpacks_image | img_url: 'master' }}" alt="Backpacks">
+    <h3>Backpacks</h3>
+    <p>Explore ></p>
+  </div>
+  <div class="category" onclick="redirectToCategory('{{ section.settings.business_link }}')">
+    <img src="{{ section.settings.business_image | img_url: 'master' }}" alt="Business">
+    <h3>Business</h3>
+    <p>Explore ></p>
+  </div>
+  <div class="category" onclick="redirectToCategory('{{ section.settings.kids_link }}')">
+    <img src="{{ section.settings.kids_image | img_url: 'master' }}" alt="Kids">
+    <h3>Clutch</h3>
+    <p>Explore ></p>
+  </div>
+</div>
+
+<script>
+function redirectToCategory(url) {
+  if (url) {
+    window.location.href = url;
+  }
+}
+</script>

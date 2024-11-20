@@ -1,0 +1,160 @@
+<!-- offers-section.liquid -->
+<div class="product-offers">
+    <h2 class="section-heading">Offers</h2>
+    <div class="offer-box">
+        <span class="offer-icon">{{ section.settings.offer_icon }}</span>
+        <span class="offer-text">{{ section.settings.offer_text }}</span>
+    </div>
+    <a href="{{ section.settings.more_offers_link }}" class="more-offers-link" style="text-decoration: none;">{{ section.settings.more_offers_text }}</a>
+    <div class="benefits">
+        <div class="benefit">
+            <span class="benefit-icon">{{ section.settings.benefit1_icon }}</span>
+            <span class="benefit-text">{{ section.settings.benefit1_text }}</span>
+        </div>
+        <div class="benefit">
+            <span class="benefit-icon">{{ section.settings.benefit2_icon }}</span>
+            <span class="benefit-text">{{ section.settings.benefit2_text }}</span>
+        </div>
+        <div class="benefit">
+            <span class="benefit-icon">{{ section.settings.benefit3_icon }}</span>
+            <span class="benefit-text">{{ section.settings.benefit3_text }}</span>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Offers Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "offer_icon",
+      "label": "Offer Icon",
+      "default": "⚙️"
+    },
+    {
+      "type": "text",
+      "id": "offer_text",
+      "label": "Offer Text",
+      "default": "EOSS - 40 - 60% Off"
+    },
+    {
+      "type": "url",
+      "id": "more_offers_link",
+      "label": "More Offers Link",
+      "default": "/"
+    },
+    {
+      "type": "text",
+      "id": "more_offers_text",
+      "label": "More Offers Text",
+      "default": "More Offers For You"
+    },
+    {
+      "type": "text",
+      "id": "benefit1_icon",
+      "label": "Benefit 1 Icon",
+      "default": "📦"
+    },
+    {
+      "type": "text",
+      "id": "benefit1_text",
+      "label": "Benefit 1 Text",
+      "default": "15 Days Returns"
+    },
+    {
+      "type": "text",
+      "id": "benefit2_icon",
+      "label": "Benefit 2 Icon",
+      "default": "💵"
+    },
+    {
+      "type": "text",
+      "id": "benefit2_text",
+      "label": "Benefit 2 Text",
+      "default": "Cash on Delivery"
+    },
+    {
+      "type": "text",
+      "id": "benefit3_icon",
+      "label": "Benefit 3 Icon",
+      "default": "🚚"
+    },
+    {
+      "type": "text",
+      "id": "benefit3_text",
+      "label": "Benefit 3 Text",
+      "default": "Free Shipping on all orders"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Offer Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+.product-offers {
+    display: inline-block;
+    border: 1px solid #e1e1e1;
+    padding: 10px; /* Reduced padding */
+    margin-top: 20px;
+    margin-right: 8%;
+    float: right; /* Aligns the offers section to the right */
+    clear: both; /* Clears any previous floats */
+    border-radius: 10px; /* Rounded corners for the offers section */
+}
+
+.offer-box {
+    display: flex;
+    align-items: center;
+}
+
+.offer-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.offer-text {
+    font-size: 18px;
+    /* Remove bold font weight */
+}
+
+.more-offers-link {
+    display: block;
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Reduced margin */
+    border-top: 1px solid #e1e1e1;
+    padding-top: 10px; /* Reduced padding */
+}
+
+.benefit {
+    text-align: center;
+    flex: 1;
+    background-color: #e0e0e0; /* Slightly darker gray background color */
+    padding: 8px; /* Reduced padding around each benefit box */
+    border-radius: 5px; /* Rounded corners for each benefit box */
+}
+
+.benefit-icon {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 5px;
+    color: black; /* Sets the color of benefit icons to black */
+}
+
+.benefit-text {
+    font-size: 16px;
+}
+</style>

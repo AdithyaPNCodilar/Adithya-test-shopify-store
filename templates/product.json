@@ -1,0 +1,232 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "air_product_reviews_app_summary_block_3rpYgG": {
+          "type": "shopify://apps/air-product-reviews/blocks/app-summary-block/c4e1e9ca-4d46-4e76-bc39-7e42417cb327",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "wishlist_king_wishlist_button_block_UwWzDg": {
+          "type": "shopify://apps/wishlist-king/blocks/wishlist-button-block/194f5011-a43c-4b22-b12e-eaf20dc4506a",
+          "settings": {
+            "button_style": "plain_accent_1",
+            "button_alignment": "left",
+            "button_content_alignment": "left",
+            "button_margin_top": 0,
+            "button_margin_bottom": 0,
+            "button_max_width": 0,
+            "button_padding_horizontal": 15,
+            "button_full_width": true,
+            "button_show_text": true,
+            "button_show_icon": true,
+            "icon_size": 18,
+            "icon_stroke_width": 1,
+            "icon_offset_vertical": 0
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "ns_estimated_delivery_date_nestscale_edd_product_gAgmwR": {
+          "type": "shopify://apps/ns-estimated-delivery-date/blocks/nestscale_edd_product/7446b593-1e01-4150-afbd-7d963204ef10",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "air_product_reviews_app_summary_block_3rpYgG",
+        "price",
+        "variant_picker",
+        "wishlist_king_wishlist_button_block_UwWzDg",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "ns_estimated_delivery_date_nestscale_edd_product_gAgmwR",
+        "share"
+      ],
+      "custom_css": [],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "offers_section_qrLnar": {
+      "type": "offers-section",
+      "disabled": true,
+      "settings": {
+        "offer_icon": "⚙️",
+        "offer_text": "EOSS - 40 - 60% Off",
+        "more_offers_link": "shopify://collections/ladies-hand-bags",
+        "more_offers_text": "More Offers For You",
+        "benefit1_icon": "📦",
+        "benefit1_text": "15 Days Returns",
+        "benefit2_icon": "💵",
+        "benefit2_text": "Cash on Delivery",
+        "benefit3_icon": "🚚",
+        "benefit3_text": "Free Shipping on all orders"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "1",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "recent-products": {
+      "type": "recent-products",
+      "settings": {
+        "heading": "Recently Viewed"
+      }
+    },
+    "collection_list_gJNiAA": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_6EKe8w": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "foot-wears"
+          }
+        },
+        "featured_collection_6TjhMc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "clutch"
+          }
+        },
+        "featured_collection_ttXNfU": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "luggage"
+          }
+        },
+        "featured_collection_UDLGR4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "school-back-packs"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_6EKe8w",
+        "featured_collection_6TjhMc",
+        "featured_collection_ttXNfU",
+        "featured_collection_UDLGR4"
+      ],
+      "settings": {
+        "title": "View more from similar collection",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "172111409719c14cef": {
+      "type": "apps",
+      "blocks": {
+        "air_product_reviews_app_block_review_list_hm3PL3": {
+          "type": "shopify://apps/air-product-reviews/blocks/app-block-review-list/c4e1e9ca-4d46-4e76-bc39-7e42417cb327",
+          "settings": {
+            "air_blockreviews_summaryHeading": "Review",
+            "air_blockreviews_layout": "grid",
+            "air_blockreviews_singleStarColor": "#16a086",
+            "air_blockreviews_primaryColor": "#121212"
+          }
+        }
+      },
+      "block_order": [
+        "air_product_reviews_app_block_review_list_hm3PL3"
+      ],
+      "custom_css": [],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "offers_section_qrLnar",
+    "related-products",
+    "recent-products",
+    "collection_list_gJNiAA",
+    "172111409719c14cef"
+  ]
+}

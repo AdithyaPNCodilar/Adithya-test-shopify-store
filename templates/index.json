@@ -1,0 +1,591 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Buy any bags above 1999 and get free pouch worth 499</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/zslide.webp",
+        "image_overlay_opacity": 50,
+        "image_height": "large",
+        "desktop_content_position": "middle-right",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "collection_list_ikx34Y": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_PVFTxw": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ladies-hand-bags"
+          }
+        },
+        "featured_collection_kRVQfg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "school-back-packs"
+          }
+        },
+        "featured_collection_CddEYt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ladies-indian-classic-wallets"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_PVFTxw",
+        "featured_collection_kRVQfg",
+        "featured_collection_CddEYt"
+      ],
+      "custom_css": [
+        ".title-wrapper-with-link {justify-content: center;}"
+      ],
+      "settings": {
+        "title": "Check This Out",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".title {text-align: center;}"
+      ],
+      "settings": {
+        "title": "NEWLY LAUNCHED",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "ladies-hand-bags",
+        "products_to_show": 6,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 16,
+        "padding_bottom": 40
+      }
+    },
+    "multirow_XfYHNp": {
+      "type": "multirow",
+      "blocks": {
+        "row_QqjiB6": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/lb3.webp",
+            "caption": "Lunch Bags",
+            "heading": "Tidal Wave Lunch Bag",
+            "text": "<p>Lunch will not just be your favourite meal of the day, it’s going to be the most stylish one too!Introducing our Lunch Bag which is Proudly Indian and 100% PeTA approved. </p>",
+            "button_label": "Buy Now",
+            "button_link": "shopify://products/mangalore-blossoms-lunch-bag"
+          }
+        },
+        "row_VPBaLJ": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/wal.webp",
+            "caption": "Wallets",
+            "heading": "WavBeach Classic Zipper Wallet",
+            "text": "<p>This is a Proudly Indian and 100% PeTA approved Vegan product with a stylish print. It is sturdy and durable with zipper closure. </p>",
+            "button_label": "Buy Now",
+            "button_link": "shopify://products/paisley-print-classic-zipper-wallet"
+          }
+        },
+        "row_pBxAQm": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/off.webp",
+            "caption": "Mother's",
+            "heading": "Multicolor Mandala Print - Office Tote Bag",
+            "text": "<p>This Special Combo has two popular products from our collection that are Proudly Indian and 100% PeTA-approved Vegan with Stylish Patterns. This combo offers them at a special price.</p>",
+            "button_label": "Buy Now",
+            "button_link": "shopify://products/berrylush"
+          }
+        }
+      },
+      "block_order": [
+        "row_QqjiB6",
+        "row_VPBaLJ",
+        "row_pBxAQm"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_nUQyh7": {
+      "type": "collage",
+      "blocks": {
+        "image_BfKW4Q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/man-walking-with-a-leather-travel-bag.jpg"
+          }
+        },
+        "product_H9wpcx": {
+          "type": "product",
+          "settings": {
+            "product": "ace-tote-bag",
+            "second_image": false
+          }
+        },
+        "collection_EM9LYf": {
+          "type": "collection",
+          "settings": {
+            "collection": "ladies-hand-bags"
+          }
+        }
+      },
+      "block_order": [
+        "image_BfKW4Q",
+        "product_H9wpcx",
+        "collection_EM9LYf"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Our Collections",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_carousel_ynd6BD": {
+      "type": "custom-carousel",
+      "blocks": {
+        "carousel_item_yEYJL9": {
+          "type": "carousel_item",
+          "settings": {
+            "image": "shopify://shop_images/carosel1.webp",
+            "title": "Royal",
+            "description": "Royal Indian Peacock Motif Classic Zipper Wallet",
+            "link": "shopify://products/paisley-print-classic-zipper-wallet"
+          }
+        },
+        "carousel_item_PnThq6": {
+          "type": "carousel_item",
+          "settings": {
+            "image": "shopify://shop_images/carosel2.webp",
+            "title": "Tidal",
+            "description": "Tidal Wave Classic Zipper Wallet",
+            "link": "shopify://products/tidal-wave-chain-wallet"
+          }
+        },
+        "carousel_item_PtWMBP": {
+          "type": "carousel_item",
+          "settings": {
+            "image": "shopify://shop_images/carosel3.webp",
+            "title": "FloMotif",
+            "description": "FloMotif Classic Zipper Wallet",
+            "link": "shopify://products/flomotif-classic-zipper-wallet"
+          }
+        },
+        "carousel_item_zHVFTz": {
+          "type": "carousel_item",
+          "settings": {
+            "image": "shopify://shop_images/carosel4.webp",
+            "title": "Classic",
+            "description": "Royal Indian Peacock Motif Classic Zipper Wallet",
+            "link": "shopify://products/royal-indian-peacock-motif-classic-zipper-wallet"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_item_yEYJL9",
+        "carousel_item_PnThq6",
+        "carousel_item_PtWMBP",
+        "carousel_item_zHVFTz"
+      ],
+      "settings": {
+        "name": "Our FIT Promise"
+      }
+    },
+    "slideshow_b6beNL": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_zccVxf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/changedbg.webp",
+            "heading": "New!!!",
+            "heading_size": "h2",
+            "subheading": "Our trolley bags are crafted to make traveling more convenient, with built-to-last features ensuring durability, functionality, and lockable zippers to protect your belongings",
+            "button_label": "Explore..!",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 10,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_qzUadf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/z1souk.webp",
+            "heading": "Look!!",
+            "heading_size": "h2",
+            "subheading": "Enhance your style with our diverse range of accessories at Askatingmonk. From belts and scarves to hats, bags, and more, our collection offers high-quality pieces designed to complement any outfit and occasion.",
+            "button_label": "Explore..!",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-right",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 30,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_zccVxf",
+        "slide_qzUadf"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "shop_by_category_7zcAGQ": {
+      "type": "shop-by-category",
+      "settings": {
+        "luggage_sets_image": "shopify://shop_images/lug2.webp",
+        "luggage_sets_link": "shopify://collections/luggage",
+        "hardside_image": "shopify://shop_images/hard.webp",
+        "hardside_link": "shopify://collections/luggage",
+        "softside_image": "shopify://shop_images/soft.webp",
+        "softside_link": "shopify://collections/luggage",
+        "backpacks_image": "shopify://shop_images/bp3.webp",
+        "backpacks_link": "shopify://collections/school-back-packs",
+        "business_image": "shopify://shop_images/bc.webp",
+        "business_link": "shopify://collections/ladies-hand-bags",
+        "kids_image": "shopify://shop_images/clutch1.webp",
+        "kids_link": "shopify://collections/clutch"
+      }
+    },
+    "shop_by_color_3N7BJN": {
+      "type": "shop-by-color",
+      "blocks": {
+        "collection_iXtJUY": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/lug2.webp",
+            "label": "Hyderabad Ikat",
+            "link_url": "shopify://collections/hyderabad-ikat"
+          }
+        },
+        "collection_JmR8HM": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/lug3.webp",
+            "label": "Jaisalmer Dunes",
+            "link_url": "shopify://collections/jaisalmer-dunes"
+          }
+        },
+        "collection_MqRPgP": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/lug1.webp",
+            "label": "FloMotif",
+            "link_url": "shopify://collections/flomotif"
+          }
+        },
+        "collection_EyqgLb": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/j3.webp",
+            "label": "Himalayan Trails",
+            "link_url": "shopify://collections/luggage"
+          }
+        },
+        "collection_qwfybz": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/amritsr.webp",
+            "label": "Amritsar Phulkari",
+            "link_url": "shopify://collections/luggage"
+          }
+        },
+        "collection_48EEnj": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/j2.webp",
+            "label": "Banaras Elegance",
+            "link_url": "shopify://collections/luggage"
+          }
+        },
+        "collection_nQzTbx": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/j4.webp",
+            "label": "Jammu Kaleen",
+            "link_url": "shopify://collections/luggage"
+          }
+        },
+        "collection_ERMkKV": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/j5.webp",
+            "label": "Himachal Chevron",
+            "link_url": "shopify://collections/luggage"
+          }
+        }
+      },
+      "block_order": [
+        "collection_iXtJUY",
+        "collection_JmR8HM",
+        "collection_MqRPgP",
+        "collection_EyqgLb",
+        "collection_qwfybz",
+        "collection_48EEnj",
+        "collection_nQzTbx",
+        "collection_ERMkKV"
+      ],
+      "settings": {
+        "section_title": "Shop By Print"
+      }
+    },
+    "rich_text_jcky3r": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fKW7xn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Effortlessly defining the modern Indian classic",
+            "heading_size": "h1"
+          }
+        },
+        "text_fGAnJz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bringing together the contemporary and the traditional, ATS weaves subtle elegance into your lifestyle. Handcrafted, Cruelty-free and Proudly Indian, ATS brings the vibrant Indian culture to the modern world.</p>"
+          }
+        },
+        "button_KTjA4J": {
+          "type": "button",
+          "settings": {
+            "button_label": "Know More",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fKW7xn",
+        "text_fGAnJz",
+        "button_KTjA4J"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "17204347627e663d13": {
+      "type": "apps",
+      "blocks": {
+        "flexi_theme_library_tabs_block_7VV7Le": {
+          "type": "shopify://apps/flexi-theme-library/blocks/tabs-block/5a4df4d6-1efe-4f41-80b3-12e6a6deefaf",
+          "settings": {
+            "heading_1": "New Arrivals",
+            "description_1": "<p>Sturdy | Number Lock | Smoot Glide</p>",
+            "product_description": false,
+            "heading_2": "Best Seller",
+            "description_2": "<p>Lightweight | Expander | TSA Lock</p>",
+            "heading_3": "View All",
+            "description_3": "<p>Seatle, Coorg, Boston</p>",
+            "equal_width": true,
+            "title_font_size": 14,
+            "description_font_size": 14,
+            "spacing": 8,
+            "thicken": false,
+            "active_underline_color": "#000000",
+            "title_color": "#000000",
+            "description_color": "#000000",
+            "line_height": 50,
+            "letter_spacing": 0,
+            "padding_top": 6,
+            "padding_bottom": 6
+          }
+        }
+      },
+      "block_order": [
+        "flexi_theme_library_tabs_block_7VV7Le"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "17205039938afcb0d4": {
+      "type": "apps",
+      "blocks": {
+        "raleon_loyalty_open_7CCUdg": {
+          "type": "shopify://apps/raleon/blocks/loyalty-open/14e03038-ecf9-42e8-9c07-f427b5c13bfb",
+          "settings": {
+            "icon_width": "2.3rem",
+            "icon_height": "2.3rem",
+            "icon_stroke_width": "0.05",
+            "container_width": "4rem",
+            "container_height": "4rem"
+          }
+        },
+        "raleon_loyalty_header_t8ByAG": {
+          "type": "shopify://apps/raleon/blocks/loyalty-header/14e03038-ecf9-42e8-9c07-f427b5c13bfb",
+          "settings": {
+            "background_color": "#f3f3f3",
+            "background_height": "250px",
+            "container_margin": 200,
+            "info_container_width": "375px",
+            "hide_images_on_mobile": false,
+            "image_left_dimension": "250",
+            "image_right_dimension": "250",
+            "image_height": "250",
+            "cta_text": "Join Our Loyalty Program",
+            "text_color": "#333333",
+            "cta_text_size": "2rem",
+            "cta_text_weight": "400",
+            "cta_description": "Join our loyalty program, and get rewarded for buying what you love.",
+            "cta_description_size": "1.5rem",
+            "cta_description_weight": "400",
+            "signup_button_color": "#44414c",
+            "signup_button_text": "Sign Up",
+            "launch_button_color": "#44414c",
+            "launch_button_text": "Launch Loyalty",
+            "button_text_color": "#ffffff",
+            "button_text_size": "1.5rem",
+            "button_text_weight": "400",
+            "button_radius": "3px"
+          }
+        },
+        "raleon_loyalty_bar_3w7PWn": {
+          "type": "shopify://apps/raleon/blocks/loyalty-bar/14e03038-ecf9-42e8-9c07-f427b5c13bfb",
+          "settings": {
+            "text": "View Available Rewards",
+            "bar_color": "#000000",
+            "icon_color": "#ffffff",
+            "icon_width": "2.3rem",
+            "icon_height": "2.3rem"
+          }
+        }
+      },
+      "block_order": [
+        "raleon_loyalty_open_7CCUdg",
+        "raleon_loyalty_header_t8ByAG",
+        "raleon_loyalty_bar_3w7PWn"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "collection_list_ikx34Y",
+    "featured_collection",
+    "multirow_XfYHNp",
+    "collage_nUQyh7",
+    "custom_carousel_ynd6BD",
+    "slideshow_b6beNL",
+    "shop_by_category_7zcAGQ",
+    "shop_by_color_3N7BJN",
+    "rich_text_jcky3r",
+    "17204347627e663d13",
+    "17205039938afcb0d4"
+  ]
+}

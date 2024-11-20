@@ -1,0 +1,29 @@
+.faq__question:hover {
+  background-color: #eaeaea;
+}
+.faq__question::after {
+  content: '\276F';
+  transition: all .5s;
+  float: right;
+}
+.faq__toggle:checked + .faq__question::after {
+  transform: rotate(90deg);
+}
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .4s;
+  padding: 0 1em;
+}
+.faq__toggle:checked ~ .faq__answer {
+  max-height: 100vh;
+  padding: 1em;
+}
+.faq__toggle {
+  display: none !important;
+}
+.faq__divider {
+  margin: 1em 0;
+  border: none;
+  border-top: 1px solid #ccc; 
+}
